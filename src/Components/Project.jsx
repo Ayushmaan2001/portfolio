@@ -63,17 +63,17 @@ const obj = {
             d1:"This Project is all about the sorting (visualise) i.e both internal and external sort.",
             d2:`
             Internal Sort
-                Bubble Sort
-                Insertion Sort
-                Selection Sort
-                Quick Sort
-                Merge Sort
-                Counting Sort
+                Bubble Sort,
+                Insertion Sort,
+                Selection Sort,
+                Quick Sort,
+                Merge Sort,
+                Counting Sort,
                 Heap Sort`,
             d3:`
             External Sort
-                K Way Merge External Sort
-                Replacement Selection Sort
+                K Way Merge External Sort,
+                Replacement Selection Sort,
                 User can also download the files (i.e both sorted and unsorted array files)
             `,
             tech:{

@@ -8,6 +8,7 @@ import Skills from './Components/Skills';
 // import Contact from './Components/Contact';
 import Project from './Components/Project';
 
+
 function App() {
   const [mousePosition,setMousePosition] = useState({
     x:0,
@@ -37,16 +38,15 @@ function App() {
   }
   return (
     <React.Fragment>
-      <Navbar />
-      <Intro />
-      <AboutUs />
-      <Skills />
-      <Project />
+      <Navbar/>
+      <Intro id=""/>
+      <AboutUs id="aboutus"/>
+      <Skills id="skills"/>
+      <Project id="projects"/>
       {/* <Contact /> */}
       <motion.div className='cur bg-[#111] h-[32px] w-[32px] rounded-full fixed top-0 left-0' 
       variants={variants}
       animate="default"
-
       />
     </React.Fragment>
   );
