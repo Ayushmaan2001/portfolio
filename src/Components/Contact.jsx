@@ -2,26 +2,38 @@ import React from 'react';
 
 const Contact = () => {
     return (
-        <div className='flex flex-row bg-seventh p-2'>
-            <div className='w-[30rem] p-2'>
-                <h2 className='text-[#f0535d] text-[1.4em]'>CONTACT</h2>
-                <h3 className='text-[#1c2273] text-[2.1rem]'>Get In Touch</h3>
-                <div className='p-2'>
-                    <p className='text-black'>
-                    Dropping a line to say g’day, ask for my resume or see if we can build something amazing together? I’d love to hear from you!
-                    </p>
-                    <p className='text-black'>
-                    Fill in your info in the form below and I look forward to hearing from you!
-                    </p>
-                    <form className='flex flex-col mt-6 text-black'>
-                        <input placeholder='Enter the Name' className='p-2 w-[40rem]'/>
-                        <input placeholder='Email' className='p-2 w-[40rem]'/>
-                        <input placeholder='Message' className='p-2 w-[40rem] h-[14rem]'/>
-                    </form>
-                </div>
+        <section class="page-section" id="contact">
+        <div class="container">
+            {/* <!-- Contact Section Heading--> */}
+            <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Contact Me</h2>
+            {/* <!-- Icon Divider--> */}
+            <div class="divider-custom">
+                <div class="divider-custom-line"></div>
+                <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                <div class="divider-custom-line"></div>
+            </div> 
+            <div class="contact-info">
+                <p id="blank"></p><p>651-200-9644</p><p>dkalla@marlboro.edu</p><p></p>
             </div>
-            <div></div>
+            <div id="link-icons">
+                <div></div>
+                <div class="link-icons">
+                    <a href="https://github.com/dtkalla" target="_blank">
+                        <img className="icons-header" alt="Github" src="https://cdn-icons-png.flaticon.com/512/25/25231.png"/>
+                    </a>
+                    <br/>
+                    <a href="https://linkedin.com/in/daniel-kalla" target="_blank">
+                        <img className="icons-header" alt="LinkedIn" src="https://cdn-icons-png.flaticon.com/512/174/174857.png"/>
+                    </a>
+                    <br/>
+                    <a href="https://wellfound.com/u/daniel-thomas-kalla" target="_blank">
+                        <img class="icons-header" id='angel-list' src="https://cdn2.iconfinder.com/data/icons/font-awesome/1792/angellist-512.png"/>
+                    </a>
+                </div>
+                <div></div>
+            </div>
         </div>
+    </section>
     );
 }
 

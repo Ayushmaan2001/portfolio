@@ -1,5 +1,6 @@
 import React from 'react';
 import Projects from './Projects';
+import axios from 'axios'
 
 const obj = {
     one :{
@@ -101,6 +102,9 @@ const Project = () => {
             <Projects  title={obj.two.title} d1={obj.two.d1} d2={obj.two.d2} d3={obj.two.d3} tech={obj.two.tech} site={obj.two.button.site} github={obj.two.button.github} img={obj.two.img}/>
             <Projects  title={obj.third.title} d1={obj.third.d1} d2={obj.third.d2} d3={obj.third.d3} tech={obj.third.tech} site={obj.third.button.site} github={obj.third.button.github} img={obj.third.img}/>
             <Projects  title={obj.fourth.title} d1={obj.fourth.d1} d2={obj.fourth.d2} d3={obj.fourth.d3} tech={obj.fourth.tech} site={obj.fourth.button.site} github={obj.fourth.button.github} img={obj.fourth.img}/>
+            <form action='https://drive.google.com/file/d/1kj78hkhW3SfgdIllf8uOZLLJYfdtIDZx/view?usp=drive_link' target='_blank'>
+            <p className='text-[1.2rem]'>To View or Download my Resume Click <button className='text-[#bc1a45] hover:text-[#bc4d1a]'  >Here</button></p>
+            </form>
         </div>
     );
 }
