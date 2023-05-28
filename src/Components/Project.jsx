@@ -43,9 +43,9 @@ const obj = {
         },
         third: {
             title:"Finance Tracking",
-            d1:"This website is used to track your expenses what you spend on each item.",
+            d1:"We can use this software for tracking and managing personal finances",
             d2:"It has both add and remove option for the item you add.",
-            d3:"This website is built using firebase rules and react routes so it’s safe and secure.",
+            d3:"It is very useful in tracking your expenses and take action accordingly.",
             tech: {
                 css:require('../assets/css.png'),
                 html:require('../assets/html-5.png'),
