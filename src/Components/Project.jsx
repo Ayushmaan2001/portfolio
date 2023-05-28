@@ -8,7 +8,7 @@ const obj = {
         d1:"This project is something like slack where you can create rooms, chats with other people and share ideas.",
         d2:`Here you can create rooms assign projects to the contributors, chat with them about the progress and everything 
         related to the project.`,
-        d3:`This website is fast, safe and secure using firebase rules and react routes.`,
+        d3:`It basically focuses on managing projects, which typically involves organizing and coordinating tasks, resources, and schedules to achieve specific goals.`,
         tech : {
             css:require('../assets/css.png'),
             html:require('../assets/html-5.png'),
@@ -55,28 +55,27 @@ const obj = {
             },
             button:{
                 site:"https://mymoney-aebc4.web.app/login",
-                girhub:""
+                github:""
             },
             img:require('../assets/finance.PNG')
         },
         fourth:{
             title:"Sorting Visualizer",
-            d1:"This Project is all about the sorting (visualise) i.e both internal and external sort.",
+            d1:"This Project is all about the sorting (visualise) i.e both internal and external sort. You can observe how different sorting algorithms perform and visualize how they rearrange elements step by step. This can be helpful for understanding the inner workings of sorting algorithms, their efficiency, and their impact on different types of data.",
             d2:`
-            Internal Sort
-                Bubble Sort,
-                Insertion Sort,
-                Selection Sort,
-                Quick Sort,
-                Merge Sort,
-                Counting Sort,
-                Heap Sort`,
+                Bubble Sort\n\t,
+                Insertion Sort\n\t,
+                Selection Sort\n\t,
+                Quick Sort\n\t,
+                Merge Sort\n\t,
+                Counting Sort\n\t,
+                Heap Sort\n,
+                K Way Merge External Sort\n\t
+                Replacement Selection Sort\n\t
+                and many more sorting Algorithms.
+                `,
             d3:`
-            External Sort
-                K Way Merge External Sort,
-                Replacement Selection Sort,
-                User can also download the files (i.e both sorted and unsorted array files)
-            `,
+            User can view/ download the intermediate states of the Sorting `,
             tech:{
                 css:require('../assets/css.png'),
                 html:require('../assets/html-5.png'),

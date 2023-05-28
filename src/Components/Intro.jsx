@@ -10,7 +10,7 @@ const Intro = () => {
             <div className='flex flex-col m-[3rem] p-[6rem] text-6xl'>
                 <div>
                     <h1>G'Day, I'm Ayush!</h1>
-                    <h1>I am a <b>Reactjs Developer.</b></h1>
+                    <h1>I am a <b>Student Undergraduate | Web Developer</b></h1>
                 </div>
             </div>
             <div>

@@ -22,7 +22,7 @@ const Skills = () => {
             </div>
             <div>
                 <h1 className='text-[#7689d8] text-[2rem] mt-20'>Currently working on:</h1>
-                <p className='text-black text-[1.5rem] antialiased'>Improving my skills in, and understanding of JavaScript and React. Also, having fun with #100DaysOfCode building & animating things via CSS.</p>
+                <p className='text-black text-[1.5rem] antialiased'>Improving my skills in, understanding of JavaScript, Data Structure, Algorithms and React.</p>
             </div>
         </div>
     );

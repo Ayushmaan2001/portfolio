@@ -1,8 +1,12 @@
 import React from 'react';
 
+const openLinkedIn = () => {
+    // window.open("www.google.com")
+    console.log(window.open)
+}
 const AboutUs = () => {
     return (
-        <div className='flex flex-row justify-around bg-third' id='#about-me flex-nowrap'>
+        <div className='flex flex-row justify-around bg-third h-[40rem]' id='#about-me flex-nowrap'>
             <div className='flex flex-col p-4 mt-[5rem]'>
                 <h2 className='text-[#f0535d] text-[1rem] font-bold'>ABOUT</h2>
                 <h3 className='text-[#1c2273] text-[2.1rem] font-semibold'>Who is Ayushmaan?</h3>
@@ -10,12 +14,14 @@ const AboutUs = () => {
             </div>
             <div className='flex flex-col w-[50rem] p-4 mt-[9rem]'>
                 <h3 className='text-[#7689d8] text-[1.55rem] p-2 font-semibold'>
-                A curiosity-driven Reactjs Developer with design chops.
+                A curiosity-driven Reactjs Developer.
                 </h3>
                 <div>
-                <p className='text-black text-[1.3rem] p-2'>I'm passionate about bringing both the technical and visual aspects of digital products to life. User experience, beautiful pixels and writing clean accessible, human code matters to me. I sweat the details. And as a follower of John Maeda’s Laws Of Simplicity, I agree that less is more.</p>
-                <p className='text-black text-[1.3rem] p-2'>I have a BA in Multimedia Design from Curtin University 🇦🇺, a Certificate of Web Development Immersive from Juno College (Formerly HackerYou) 🇨🇦, (and an Advanced Scuba Diving License from PADI 🇵🇭!)</p>
-                <p className='text-black text-[1.3rem] p-2'>I'm happiest when I'm creating, learning, exploring and thinking about how to make things better. Currently solving deceptively simple problems at UsePastel.Com. I'm not available for any freelance work, but feel free to reach out and say hello! I promise I don't bite </p>
+                <p className='text-black text-[1.3rem] p-2'>I am a highly motivated and passionate student pursuing a Bachelor of Technology degree from Netaji Subhas University of Technology (NSUT), East Campus (formerly AIACTR). With a strong academic background and practical experience in web development, I strive to excel in the field of technology and contribute to innovative projects.</p>
+                <p className='text-black text-[1.3rem] p-2'>I am eager to leverage my skills and knowledge in a challenging environment, where I can contribute to cutting-edge projects and collaborate with like-minded professionals. If you are interested in discussing potential opportunities or have any questions, feel free to connect with me on<span>
+                    <button className='text-black' onClick={openLinkedIn}>Linkedin</button>
+                    </span></p>
+                <p className='text-black text-[1.3rem] p-2'>Let's connect and explore the exciting possibilities of the tech world together!</p>
                 </div>
                 
             </div>
