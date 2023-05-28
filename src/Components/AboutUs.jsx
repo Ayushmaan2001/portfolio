@@ -1,8 +1,7 @@
 import React from 'react';
 
 const openLinkedIn = () => {
-    // window.open("www.google.com")
-    console.log(window.open)
+    window.location.href = "www.google.com"
 }
 const AboutUs = () => {
     return (
@@ -19,7 +18,8 @@ const AboutUs = () => {
                 <div>
                 <p className='text-black text-[1.3rem] p-2'>I am a highly motivated and passionate student pursuing a Bachelor of Technology degree from Netaji Subhas University of Technology (NSUT), East Campus (formerly AIACTR). With a strong academic background and practical experience in web development, I strive to excel in the field of technology and contribute to innovative projects.</p>
                 <p className='text-black text-[1.3rem] p-2'>I am eager to leverage my skills and knowledge in a challenging environment, where I can contribute to cutting-edge projects and collaborate with like-minded professionals. If you are interested in discussing potential opportunities or have any questions, feel free to connect with me on<span>
-                    <button className='text-black' onClick={openLinkedIn}>Linkedin</button>
+                    {/* <button className='text-black' onClick={location.href}>Linkedin</button> */}
+                    <a className='text-black' href='https://www.linkedin.com/in/ayushmaan-jangid-5a567820a/' target='_blank'>Linkedin</a>
                     </span></p>
                 <p className='text-black text-[1.3rem] p-2'>Let's connect and explore the exciting possibilities of the tech world together!</p>
                 </div>
