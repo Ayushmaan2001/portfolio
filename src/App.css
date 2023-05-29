@@ -6,15 +6,18 @@
     a{
         @apply hover:text-[#d90429] m-3 p-2
     }
-    #intro{
-        @apply bg-secondary;
-        /* clip-path: polygon(0 0, 100% 0, 100% 100%, 0 75%); */
+    img:hover {
+      border-color: blue;
     }
+    #intro{
+      @apply bg-secondary;
+      /* clip-path: polygon(0 0, 100% 0, 100% 100%, 0 75%); */
+  }
     #about-me{
         
         /* clip-path: polygon(0 70%, 100% 20%, 100% 100%, 0 100%); */
     }
-    p{
+    p, h{
         @apply text-black
     }
     .page-section {

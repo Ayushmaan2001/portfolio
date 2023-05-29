@@ -1,6 +1,5 @@
 import React from 'react';
 import Projects from './Projects';
-import axios from 'axios'
 
 const obj = {
     one :{
@@ -90,6 +89,24 @@ const obj = {
             },
             img:require('../assets/sorting.PNG')
         },
+        fifth :{
+            title:"YouTubeMate",
+            d1:"Developed a Youtube like application using ReactJs and Material UI which is responsive in nature. User can stream videos from variety of content creators and genres. Interface is similar to Youtube.",
+            d2:`Users can search for content of their preference based on genre`,
+    
+            tech : {
+                css:require('../assets/css.png'),
+                html:require('../assets/html-5.png'),
+                js:require('../assets/javascript.png'),
+                react:require('../assets/react.png'),
+                mui:require('../assets/material-ui.png')
+            },
+            button:{
+                site:"https://youtubemate1.netlify.app/",
+                github:"https://github.com/Shubham-100/YouTubeMate"
+            },
+            img:require('../assets/tubemate.PNG')
+        }
     }
 
 const Project = () => {
@@ -101,6 +118,7 @@ const Project = () => {
             <Projects  title={obj.two.title} d1={obj.two.d1} d2={obj.two.d2} d3={obj.two.d3} tech={obj.two.tech} site={obj.two.button.site} github={obj.two.button.github} img={obj.two.img}/>
             <Projects  title={obj.third.title} d1={obj.third.d1} d2={obj.third.d2} d3={obj.third.d3} tech={obj.third.tech} site={obj.third.button.site} github={obj.third.button.github} img={obj.third.img}/>
             <Projects  title={obj.fourth.title} d1={obj.fourth.d1} d2={obj.fourth.d2} d3={obj.fourth.d3} tech={obj.fourth.tech} site={obj.fourth.button.site} github={obj.fourth.button.github} img={obj.fourth.img}/>
+            <Projects  title={obj.fifth.title} d1={obj.fifth.d1} d2={obj.fifth.d2} d3={obj.fifth.d3} tech={obj.fifth.tech} site={obj.fifth.button.site} github={obj.fifth.button.github} img={obj.fifth.img}/>
             <form action='https://drive.google.com/file/d/1kj78hkhW3SfgdIllf8uOZLLJYfdtIDZx/view?usp=drive_link' target='_blank'>
             <p className='text-[1.2rem]'>To View or Download my Resume Click <button className='text-[#bc1a45] hover:text-[#bc4d1a]'  >Here</button></p>
             </form>

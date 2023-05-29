@@ -1,31 +1,31 @@
 import React from 'react';
 
-const openLinkedIn = () => {
-    window.location.href = "www.google.com"
-}
 const AboutUs = () => {
     return (
-        <div className='flex flex-row justify-around bg-third h-[40rem]' id='#about-me flex-nowrap'>
-            <div className='flex flex-col p-4 mt-[5rem]'>
-                <h2 className='text-[#f0535d] text-[1rem] font-bold'>ABOUT</h2>
-                <h3 className='text-[#1c2273] text-[2.1rem] font-semibold'>Who is Ayushmaan?</h3>
-                <img src={require('../assets/personjpg.jpg')} className='w-80 h-80 rounded-full mt-6'/>
+        <div className='flex flex-row justify-around bg-third flex-nowrap' id='#about-me'>
+        <div className='flex flex-col p-4 mt-[5rem]'>
+            <h2 className='text-[#f0535d] text-[1.5rem] font-bold'>ABOUT ME</h2>
+            <h3 className='text-[#1c2273] text-[2.5rem] font-semibold'>Who is Ayushmaan?</h3>
+            <img src={require('../assets/personjpg.jpg')} className='w-80 h-80 rounded-full mt-6' alt='dp'/>
+        </div>
+        <div className='flex flex-col w-[50rem] p-4 mt-[9rem]'>
+            <h3 className='text-[#1c2273] text-[1.55rem] p-0 font-semibold'>
+            A curiosity-driven developer with design chops.
+            </h3>
+            <div>
+            <p className='text-black text-[1.3rem] p-0'>I am a highly motivated and passionate student pursuing a Bachelor of Technology degree from Netaji Subhas University of Technology (NSUT), East Campus (formerly AIACTR). With a strong academic background and practical experience in web development, I strive to excel in the field of technology and contribute to innovative projects.I am eager to leverage my skills and knowledge in a challenging environment, where I can contribute to cutting-edge projects and collaborate with like-minded professionals. If you are interested in discussing potential opportunities or have any questions, feel free to connect with me.</p>
             </div>
-            <div className='flex flex-col w-[50rem] p-4 mt-[9rem]'>
-                <h3 className='text-[#7689d8] text-[1.55rem] p-2 font-semibold'>
-                A curiosity-driven Reactjs Developer.
-                </h3>
-                <div>
-                <p className='text-black text-[1.3rem] p-2'>I am a highly motivated and passionate student pursuing a Bachelor of Technology degree from Netaji Subhas University of Technology (NSUT), East Campus (formerly AIACTR). With a strong academic background and practical experience in web development, I strive to excel in the field of technology and contribute to innovative projects.</p>
-                <p className='text-black text-[1.3rem] p-2'>I am eager to leverage my skills and knowledge in a challenging environment, where I can contribute to cutting-edge projects and collaborate with like-minded professionals. If you are interested in discussing potential opportunities or have any questions, feel free to connect with me on<span>
-                    {/* <button className='text-black' onClick={location.href}>Linkedin</button> */}
-                    <a className='text-black' href='https://www.linkedin.com/in/ayushmaan-jangid-5a567820a/' target='_blank'>Linkedin</a>
-                    </span></p>
-                <p className='text-black text-[1.3rem] p-2'>Let's connect and explore the exciting possibilities of the tech world together!</p>
-                </div>
-                
+            <form action='https://drive.google.com/file/d/1kj78hkhW3SfgdIllf8uOZLLJYfdtIDZx/view?usp=drive_link' target='_blank'>
+                <p className='text-[1.2rem]' >Link to <button className='text-[#bc1a45] hover:text-[#bc4d1a]'  style={{textDecoration: "underline", paddingTop: "2rem"}}>Resume</button></p>
+            </form>
+            <div className='flex flex-row flex-wrap mt-4 h-[5rem]'>
+                <a href="https://github.com/Ayushmaan2001/" target="_blank" rel='noopener' className='hover:border-black hover:border-2 rounded-full w-[4rem] h-4[rem]'><img src={require('../assets/github.png')} className='w-10 h-10 rounded-full' alt='logo'/></a>
+                <a href="https://leetcode.com/Killer-coder/" target="_blank" rel='noopener' className='hover:border-black hover:border-2 rounded-full w-[4rem] h-4[rem]'><img src={require('../assets/lc.png')} className='w-10 h-10 rounded-full' alt='logo'/></a>
+                <a href="https://www.linkedin.com/in/ayushmaan-jangid-5a567820a/" target="_blank" rel='noopener' className='hover:border-black hover:border-2 rounded-full w-[4rem] h-4[rem]'><img src={require('../assets/linkedin.png')} className='w-10 h-10 rounded-full' alt='logo'/></a>
+                <a href="mailto:ayushmaanjangid.e21@nsut.ac.in" rel='noopener' className='hover:border-black hover:border-2 rounded-full w-[4rem] h-4[rem]'> <img src={require('../assets/gmail.png')} className='w-10 h-10 rounded-full' alt='logo'/></a>
             </div>
         </div>
+    </div>
     );
 }
 
