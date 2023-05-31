@@ -109,9 +109,9 @@ const obj = {
         }
     }
 
-const Project = () => {
+const Project = ({PROJECTS}) => {
     return (
-        <div className='bg-fifth p-40'>
+        <div className='bg-fifth p-40' ref={PROJECTS}>
             <div><h2 className='text-[1.4em]'>Work</h2></div>
             <div><h3 className='text-[#1c2273] text-[2.1rem]'>A Selection of Stuff I've Built</h3></div>
             <Projects title={obj.one.title} d1={obj.one.d1} d2={obj.one.d2} d3={obj.one.d3} tech={obj.one.tech} site={obj.one.button.site} github={obj.one.button.github} img={obj.one.img}/>
@@ -119,9 +119,6 @@ const Project = () => {
             <Projects  title={obj.third.title} d1={obj.third.d1} d2={obj.third.d2} d3={obj.third.d3} tech={obj.third.tech} site={obj.third.button.site} github={obj.third.button.github} img={obj.third.img}/>
             <Projects  title={obj.fourth.title} d1={obj.fourth.d1} d2={obj.fourth.d2} d3={obj.fourth.d3} tech={obj.fourth.tech} site={obj.fourth.button.site} github={obj.fourth.button.github} img={obj.fourth.img}/>
             <Projects  title={obj.fifth.title} d1={obj.fifth.d1} d2={obj.fifth.d2} d3={obj.fifth.d3} tech={obj.fifth.tech} site={obj.fifth.button.site} github={obj.fifth.button.github} img={obj.fifth.img}/>
-            <form action='https://drive.google.com/file/d/1kj78hkhW3SfgdIllf8uOZLLJYfdtIDZx/view?usp=drive_link' target='_blank'>
-            <p className='text-[1.2rem]'>To View or Download my Resume Click <button className='text-[#bc1a45] hover:text-[#bc4d1a]'  >Here</button></p>
-            </form>
         </div>
     );
 }

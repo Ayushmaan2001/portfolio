@@ -1,5 +1,5 @@
 import './App.css';
-import React from 'react'
+import React,{useRef} from 'react'
 import Navbar from './Components/Navbar';
 import Intro from './Components/Intro';
 import AboutUs from './Components/AboutUs';
@@ -30,19 +30,29 @@ function App() {
   //   }
   // })
 
+  const HOME = useRef()
+  const PROJECTS = useRef()
+  const ACHIEVEMENTS = useRef()
+  const ABOUT_ME = useRef()
+  const SKILLS = useRef();
+
+    const scrollToSection = (elementRef) => {
+      window.scrollTo({
+        top: elementRef.current.offsetTop,
+        behavior: "smooth",
+        // You can also assign value "auto"
+        // to the behavior parameter.
+      });
+      
+    }
 
   return (
     <React.Fragment>
-      <Navbar/>
-      <Intro id=""/>
-      <AboutUs id="aboutus"/>
-      <Skills id="skills"/>
-      <Project id="projects"/>
-       <Routes>
-              <Route exact path='/about-me' element={<AboutUs/>}></Route>
-              <Route exact path='/skills' element={<AboutUs/>}></Route>
-             <Route exact path='/projects' element={<Project/>}></Route>  
-      </Routes>
+      <Navbar HOME={HOME} PROJECTS={PROJECTS} ACHIEVEMENTS={ACHIEVEMENTS} ABOUT_ME={ABOUT_ME} scrollToSection={scrollToSection} SKILLS={SKILLS}/>
+      <Intro id="" HOME={HOME}/>
+      <AboutUs id="aboutus" ABOUT_ME={ABOUT_ME}/>
+      <Skills id="skills" SKILLS={SKILLS}/>
+      <Project id="projects" PROJECTS={PROJECTS}/>
       <Footer />
      
     </React.Fragment>

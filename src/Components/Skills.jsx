@@ -1,9 +1,9 @@
 import React from 'react';
 import ToolsAndSkills from './ToolsAndSkills';
 
-const Skills = () => {
+const Skills = ({SKILLS}) => {
     return (
-        <div className='bg-fourth p-40'>
+        <div className='bg-fourth p-40' ref={SKILLS}>
             <div className='font-semibols text-[1.4em] p-1'>Skills and Tools</div>
             <div className='text-[#1c2273] font-bold text-[2.1rem] p-1'>My Toolbox & Things I Can Do</div>
             <div className='text-black p-2'>The skills, tools and technologies I use to bring your products to life</div>
