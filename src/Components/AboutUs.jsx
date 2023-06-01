@@ -8,7 +8,7 @@ const AboutUs = ({ABOUT_ME}) => {
             <h3 className='text-[#1c2273] text-[2.5rem] font-semibold'>Who is Ayushmaan?</h3>
             <img src={require('../assets/personjpg.jpg')} className='w-80 h-80 rounded-lg md:rounded-full mt-6' alt='dp'/>
         </div>
-        <div className='flex flex-col w-[320px] p-3 md:mt-[8rem] md:w-full mt-3'>
+        <div className='flex flex-col p-3 md:mt-[8rem] md:w-full mt-3'>
             <h3 className='text-[#1c2273] text-[1.55rem] p-0 font-semibold'>
             A curiosity-driven developer with design chops.
             </h3>

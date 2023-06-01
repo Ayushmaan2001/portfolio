@@ -9,7 +9,6 @@ import Achievements from './Components/Achievements';
 
 
 function App() {
-  const HOME = useRef()
   const PROJECTS = useRef()
   const ACHIEVEMENTS = useRef()
   const ABOUT_ME = useRef()
@@ -25,7 +24,7 @@ function App() {
 
   return (
     <div className='w-screen md:w-full'>
-      {/* <Navbar HOME={HOME} PROJECTS={PROJECTS} ACHIEVEMENTS={ACHIEVEMENTS} ABOUT_ME={ABOUT_ME} scrollToSection={scrollToSection} SKILLS={SKILLS}/> */}
+      <Navbar PROJECTS={PROJECTS} ACHIEVEMENTS={ACHIEVEMENTS} ABOUT_ME={ABOUT_ME} scrollToSection={scrollToSection} SKILLS={SKILLS}/>
       <AboutUs id="aboutus" ABOUT_ME={ABOUT_ME}/>
       <Skills id="skills" SKILLS={SKILLS}/>
       <Project id="projects" PROJECTS={PROJECTS}/>
