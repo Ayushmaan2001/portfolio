@@ -2,7 +2,7 @@ import React from 'react';
 
 const Techs = (img) => {
     return (
-        <div className='w-12 h-12 flex flex-row'>
+        <div className='w-9 h-9 flex flex-row my-3 md:w-12 md:h-12 ml-1'>
             {
                 Object.entries(img).map(([key,value]) => {
                     return (

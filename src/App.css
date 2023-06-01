@@ -4,7 +4,7 @@
 
 @layer components{
     a{
-        @apply hover:text-[#d90429] m-3 p-2 hover:cursor-pointer
+        @apply hover:text-[#d90429] m-3 p-2 hover:cursor-pointer;       
     }
     img:hover {
       border-color: blue;
@@ -14,7 +14,7 @@
       /* clip-path: polygon(0 0, 100% 0, 100% 100%, 0 75%); */
   }
     #about-me{
-        
+        /* @apply lg:flex-col */
         /* clip-path: polygon(0 70%, 100% 20%, 100% 100%, 0 100%); */
     }
     ul {

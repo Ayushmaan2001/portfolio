@@ -3,11 +3,11 @@ import ToolsAndSkills from './ToolsAndSkills';
 
 const Skills = ({SKILLS}) => {
     return (
-        <div className='bg-fourth p-40' ref={SKILLS}>
+        <div className='bg-fourth p-3 md:p-20' ref={SKILLS}>
             <div className='font-semibols text-[1.4em] p-1'>Skills and Tools</div>
             <div className='text-[#1c2273] font-bold text-[2.1rem] p-1'>My Toolbox & Things I Can Do</div>
             <div className='text-black p-2'>The skills, tools and technologies I use to bring your products to life</div>
-            <div className='flex flex-row flex-wrap '>
+            <div className='flex flex-row flex-wrap justify-around md:justify-normal'>
                 <ToolsAndSkills img={require('../assets/c-.png')} name={"C++"}/>
                 <ToolsAndSkills img={require('../assets/branch.png')} name={"GIT"}/>
                 <ToolsAndSkills img={require('../assets/css.png')} name={"CSS"}/>
@@ -20,8 +20,8 @@ const Skills = ({SKILLS}) => {
                 <ToolsAndSkills img={require('../assets/react.png')} name={"REACTJS"}/>
                 <ToolsAndSkills img={require('../assets/sql.png')} name={"SQL"}/>
             </div>
-            <div>
-                <h1 className='text-[#7689d8] text-[2rem] mt-20'>Currently working on:</h1>
+            <div className='mb-4 md:mb-auto'>
+                <h1 className='text-[#7689d8] text-[2rem] mt-10'>Currently working on:</h1>
                 <p className='text-black text-[1.5rem] antialiased'>Improving my skills in, understanding of JavaScript, Data Structure, Algorithms and React.</p>
             </div>
         </div>

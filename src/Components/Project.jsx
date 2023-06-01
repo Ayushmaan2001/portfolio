@@ -111,7 +111,7 @@ const obj = {
 
 const Project = ({PROJECTS}) => {
     return (
-        <div className='bg-fifth p-40' ref={PROJECTS}>
+        <div className='bg-fifth p-3 md:p-20' ref={PROJECTS}>
             <div><h2 className='text-[1.4em]'>Work</h2></div>
             <div><h3 className='text-[#1c2273] text-[2.1rem]'>A Selection of Stuff I've Built</h3></div>
             <Projects title={obj.one.title} d1={obj.one.d1} d2={obj.one.d2} d3={obj.one.d3} tech={obj.one.tech} site={obj.one.button.site} github={obj.one.button.github} img={obj.one.img}/>
